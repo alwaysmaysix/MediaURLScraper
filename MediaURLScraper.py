@@ -14,7 +14,7 @@ def validate_url(url):
 def get_media_urls(url):
     options = Options()
     options.add_argument("--headless")
-    service = Service('C:\\Users\\tempou01\\Downloads\\Streaming-URL-FInder\\chromedriver.exe')
+    service = Service('path \\chromedriver.exe')
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
     
@@ -62,7 +62,7 @@ def main():
         print()
 
     if len(all_media_urls) > 0:
-        export_to_file('C:\\Users\\tempou01\\Downloads\\Streaming-URL-FInder\\media_urls.txt', all_media_urls)
+        export_to_file('path\\media_urls.txt', all_media_urls)
         print("All media URLs exported to 'media_urls.txt'")
     else:
         print("No media URLs found.")
