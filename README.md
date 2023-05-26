@@ -40,11 +40,29 @@ Please make sure to have the Chrome WebDriver installed and configured correctly
 To further simplify the setup process, I've included a setup.bat file in the repository. This batch file handles the environment setup and activation for you. 
 -To automate the environment setup, simply double-click the setup.bat file. It will open a command prompt, navigate to the script directory, and activate the virtual environment for you.
 
-4. Run the script:
+4.To make it work, follow these steps:
 
-5. Follow the prompts to enter the URLs you want to scrape media URLs from. The script will scrape the URLs and display the results.
+-Open the script in your favorite text editor or Python IDE.
 
-6. The extracted media URLs will be saved in a file named `media_urls.txt` in the project directory.
+5.Modify the following parts of the code to match your setup:
+
+-Set the correct file path to the Chrome WebDriver executable:
+
+Service('your_chromedriver_path/chromedriver.exe')
+
+-Adjust the desired file path for exporting the media URLs:
+
+ 'your_desired_file_path/media_urls.txt'
+
+5.Save the modified script.
+
+6. Run the script using the following command:
+
+      python script_name.py
+
+7. Follow the prompts to enter the URLs you want to scrape media URLs from. The script will scrape the URLs and display the results.
+
+8. The extracted media URLs will be saved in a file named `media_urls.txt` in the project directory.
 
 ## License
 
