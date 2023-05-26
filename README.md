@@ -54,15 +54,15 @@ Service('your_chromedriver_path/chromedriver.exe')
 
  'your_desired_file_path/media_urls.txt'
 
-5.Save the modified script.
+6.Save the modified script.
 
-6. Run the script using the following command:
+7. Run the script using the following command:
 
       python script_name.py
 
-7. Follow the prompts to enter the URLs you want to scrape media URLs from. The script will scrape the URLs and display the results.
+8. Follow the prompts to enter the URLs you want to scrape media URLs from. The script will scrape the URLs and display the results.
 
-8. The extracted media URLs will be saved in a file named `media_urls.txt` in the project directory.
+9. The extracted media URLs will be saved in a file named `media_urls.txt` in the project directory.
 
 ## License
 
